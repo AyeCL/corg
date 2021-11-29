@@ -181,5 +181,6 @@ iFloat_t floatAdd (iFloat_t x, iFloat_t y) {
 
 /** @todo Implement based on documentation contained in iFloat.h */
 iFloat_t floatSub (iFloat_t x, iFloat_t y) {
-  return 0;
+  iFloat_t negativeY = floatNegate(y);
+  return floatAdd(x, negativeY);
 }
