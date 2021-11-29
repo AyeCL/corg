@@ -1,6 +1,6 @@
 /* CS270 
  *
- * Author: Your name here
+ * Author: Aayush Lamichhane
  * Date:   2/12/2020
  */
  
@@ -10,10 +10,17 @@
 typedef struct
 {
   // TODO: Add required members
+  char firstName[80];
+  float qualityPoints;
+  int numCredits;
 } Student;
 
 // Structure that represents a class roster
 // TODO: Declare this structure
+typedef struct {
+    int numStudents;
+    Student **students;
+} ClassRoster;
 
 /********** FUNCTION PROTOTYPES ***********************************************/
 
